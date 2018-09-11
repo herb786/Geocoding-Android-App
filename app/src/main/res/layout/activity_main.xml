@@ -3,12 +3,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#334455"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/lighthouse"/>
+
     <TextView
-        android:id="@+id/placeInfo"
+        android:id="@+id/placeCoordinates"
+        android:background="@drawable/border"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:drawableRight="@drawable/map"
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Your current position:" />
+
+
+    <ImageView
+        android:adjustViewBounds="true"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fire_station"/>
+
+    <Button
+        android:id="@+id/resultIpGeolocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:text="Fire stations in: " />
+
 
 </LinearLayout>
